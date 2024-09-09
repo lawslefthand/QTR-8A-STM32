@@ -2,6 +2,9 @@
 
 This repository contains a driver for the QTR-8A reflectance sensor array, designed to work with the STM32 F030R8 microcontroller. The driver utilizes the ADC to measure the analog output from each sensor in the array, converting it into readable data for use in applications like line-following robots or surface detection systems.
 
+![0J620 250 (1)](https://github.com/user-attachments/assets/932bdb65-d9b4-42b0-911e-5a553f126045)
+
+
 ## Features
 - **ADC-Based Measurement**: The QTR-8A sensor array outputs analog signals that are read using the STM32's ADC. Each sensor's value is sampled, providing precise reflectance readings.
 - **Configurable Access**: Sensor readings are stored in accessible variables within the `qtr_8a.c` file, making it easy to integrate with your main application.
@@ -17,7 +20,6 @@ This repository contains a driver for the QTR-8A reflectance sensor array, desig
 3. The storage variables containing sensor readings can be accessed directly from `qtr_8a.c`.
 4. Example code in main.c.
 
-![0J620 250 (1)](https://github.com/user-attachments/assets/932bdb65-d9b4-42b0-911e-5a553f126045)
 
 
 
