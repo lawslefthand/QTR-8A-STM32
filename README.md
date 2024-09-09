@@ -15,6 +15,7 @@ This repository contains a driver for the QTR-8A reflectance sensor array, desig
 1. Include the `qtr_8a.h` header in your project.
 2. Use the functions provided to initialize the ADC and read sensor values from the QTR-8A array.
 3. The storage variables containing sensor readings can be accessed directly from `qtr_8a.c`.
+4. Example code in main.c.
 
 ## License
 This project is open-source and available under the MIT License.
