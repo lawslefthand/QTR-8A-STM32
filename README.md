@@ -17,5 +17,9 @@ This repository contains a driver for the QTR-8A reflectance sensor array, desig
 3. The storage variables containing sensor readings can be accessed directly from `qtr_8a.c`.
 4. Example code in main.c.
 
+![0J620 250 (1)](https://github.com/user-attachments/assets/932bdb65-d9b4-42b0-911e-5a553f126045)
+
+
+
 ## License
 This project is open-source and available under the MIT License.
