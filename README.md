@@ -19,7 +19,7 @@ This repository contains a driver for the QTR-8A reflectance sensor array, desig
 2. Use the functions provided to initialize the ADC and read sensor values from the QTR-8A array.
 3. The storage variables containing sensor readings can be accessed directly from `qtr_8a.c`.
 4. Example code in main.c.
-5. Connections - ## Wiring
+5. Connections - Wiring
 Connect each QTR-8A sensor output to an analog pin on the STM32 board as follows:
 
 | Sensor Output | STM32 Pin | ADC Channel | `conv_start` Function |
