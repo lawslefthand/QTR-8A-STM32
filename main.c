@@ -13,7 +13,7 @@ int main()
 
 	while(1)
 	{
-
+       // use any of the conv_start(your pin connection) for the connection of your choice. Check table in readme.md for connection refrence.
         adc_enable();
 		conv_start1();
 		adc_disable();
