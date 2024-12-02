@@ -5,10 +5,10 @@
 #include "usart.h"
 
 void clk_enable() {
-    RCC->AHBENR |= RCC_AHBENR_GPIOAEN; // Enable GPIOA clock
-    RCC->AHBENR |= RCC_AHBENR_GPIOBEN; // Enable GPIOB clock
-    RCC->AHBENR |= RCC_AHBENR_GPIOCEN; // Enable GPIOC clock
-    RCC->APB2ENR |= RCC_APB2ENR_ADC1EN; // Enable ADC1 clock
+    RCC->AHBENR |= RCC_AHBENR_GPIOAEN; 
+    RCC->AHBENR |= RCC_AHBENR_GPIOBEN; 
+    RCC->AHBENR |= RCC_AHBENR_GPIOCEN; 
+    RCC->APB2ENR |= RCC_APB2ENR_ADC1EN; 
 }
 
 void gpio_config() {
