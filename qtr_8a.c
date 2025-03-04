@@ -37,7 +37,7 @@ void adc_config(void) {
     ADC1->SMPR |= ADC_SMPR_SMP_0 | ADC_SMPR_SMP_1 | ADC_SMPR_SMP_2; // Configure sampling time
 }
 
-void conv_start1(void) {
+long unsigned int conv_start1(void) {
     ADC1->CHSELR = ADC_CHSELR_CHSEL0;
     long unsigned int ADC_Result1;
     ADC1->CR |= ADC_CR_ADSTART;
@@ -46,9 +46,11 @@ void conv_start1(void) {
     }
     ADC_Result1 = ADC1->DR;
     printf("Sensor %d, result: %lu\n", 1, ADC_Result1);
+
+    return ADC_Result1;
 }
 
-void conv_start2(void) {
+long unsigned int conv_start2(void) {
     ADC1->CHSELR = ADC_CHSELR_CHSEL1;
     long unsigned int ADC_Result2;
     ADC1->CR |= ADC_CR_ADSTART;
@@ -57,9 +59,11 @@ void conv_start2(void) {
     }
     ADC_Result2 = ADC1->DR;
     printf("Sensor %d, result: %lu\n", 2, ADC_Result2);
+
+    return ADC_Result2;
 }
 
-void conv_start3(void) {
+long unsigned int conv_start3(void) {
     ADC1->CHSELR = ADC_CHSELR_CHSEL4;
     long unsigned int ADC_Result3;
     ADC1->CR |= ADC_CR_ADSTART;
@@ -68,9 +72,11 @@ void conv_start3(void) {
     }
     ADC_Result3 = ADC1->DR;
     printf("Sensor %d, result: %lu\n", 3, ADC_Result3);
+
+    return ADC_Result3;
 }
 
-void conv_start4(void) {
+long unsigned int conv_start4(void) {
     ADC1->CHSELR = ADC_CHSELR_CHSEL8;
     long unsigned int ADC_Result4;
     ADC1->CR |= ADC_CR_ADSTART;
@@ -79,9 +85,11 @@ void conv_start4(void) {
     }
     ADC_Result4 = ADC1->DR;
     printf("Sensor %d, result: %lu\n", 4, ADC_Result4);
+
+    return ADC_Result4;
 }
 
-void conv_start5(void) {
+long unsigned int conv_start5(void) {
     ADC1->CHSELR = ADC_CHSELR_CHSEL10;
     long unsigned int ADC_Result5;
     ADC1->CR |= ADC_CR_ADSTART;
@@ -90,9 +98,11 @@ void conv_start5(void) {
     }
     ADC_Result5 = ADC1->DR;
     printf("Sensor %d, result: %lu\n", 5, ADC_Result5);
+
+    return ADC_Result5;
 }
 
-void conv_start6(void) {
+long unsigned int conv_start6(void) {
     ADC1->CHSELR = ADC_CHSELR_CHSEL11;
     long unsigned int ADC_Result6;
     ADC1->CR |= ADC_CR_ADSTART;
@@ -100,4 +110,6 @@ void conv_start6(void) {
     }
     ADC_Result6 = ADC1->DR;
     printf("Sensor %d, result: %lu\n", 6, ADC_Result6);
+
+    return ADC_Result6;
 }
